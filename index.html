@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sudoku</title>
+    <meta
+      name="description"
+      content="Sudoku is a polished mobile puzzle game with multiple difficulties, hints, statistics, and daily challenges."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #ecf9f4;
+        --ink: #0e1717;
+        --muted: #526260;
+        --line: #cfe0da;
+        --primary: #0e8f72;
+        --surface: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+
+      .hero {
+        display: grid;
+        gap: 28px;
+        align-items: center;
+      }
+
+      .badge {
+        display: inline-flex;
+        width: fit-content;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 12px;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 700;
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      h1 {
+        margin: 14px 0 0;
+        max-width: 760px;
+        font-size: clamp(44px, 8vw, 76px);
+        line-height: 0.96;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .lead {
+        max-width: 680px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      a {
+        color: var(--primary);
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        border-radius: 6px;
+        padding: 0 16px;
+        background: var(--primary);
+        color: #ffffff;
+      }
+
+      .button.secondary {
+        border: 1px solid var(--line);
+        background: var(--surface);
+        color: var(--ink);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 44px;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        background: rgba(255, 255, 255, 0.82);
+      }
+
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
+
+      .card p {
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      footer {
+        margin-top: 52px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 36px 0;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="title">
+        <div>
+          <span class="badge">Mobile Puzzle Game</span>
+          <h1 id="title">Sudoku</h1>
+        </div>
+        <div>
+          <p class="lead">
+            A calm Sudoku puzzle app with easy, normal, and hard modes, daily challenges,
+            statistics, notes, hints, and a focused mobile-first game experience.
+          </p>
+          <div class="actions">
+            <a class="button" href="privacy-policy.html">Privacy Policy</a>
+            <a class="button secondary" href="app-ads.txt">app-ads.txt</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="App features">
+        <article class="card">
+          <h2>Multiple Modes</h2>
+          <p>Choose a quick 6x6 puzzle, classic 9x9 Sudoku, or a larger 16x16 challenge.</p>
+        </article>
+        <article class="card">
+          <h2>Helpful Tools</h2>
+          <p>Use notes, undo, hints, and clear visual feedback while solving each puzzle.</p>
+        </article>
+        <article class="card">
+          <h2>Progress</h2>
+          <p>Track completion, best times, streaks, and daily challenge rewards.</p>
+        </article>
+      </section>
+
+      <footer>
+        <p>
+          Support:
+          <a href="mailto:daeehee@naver.com">daeehee@naver.com</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
